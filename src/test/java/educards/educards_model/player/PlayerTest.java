@@ -29,4 +29,10 @@ public class PlayerTest {
 	public void testGetHiScore() {
 		assertTrue(0 == player.getHiScore());
 	}
+	
+	@Test
+	public void saveHiScore() {
+		player.saveHiScore(40);
+		assertTrue(40 == player.getHiScore());
+	}
 }

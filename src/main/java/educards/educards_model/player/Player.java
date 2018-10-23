@@ -11,6 +11,12 @@ public class Player {
 		username = name;
 	}
 	
+	public void saveHiScore(int score) {
+		if(score > hiScore) {
+			hiScore = score;
+		}
+	}
+	
 	public Integer getId() {
 		return idPlayer;
 	}
