@@ -1,4 +1,4 @@
-package educards.educards_model;
+package educards.educards_model.player;
 
 import java.util.ArrayList;
 import java.util.Collections;

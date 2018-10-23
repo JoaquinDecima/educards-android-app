@@ -1,4 +1,4 @@
-package educards.educards_model;
+package educards.educards_model.card;
 
 import java.util.ArrayList;
 

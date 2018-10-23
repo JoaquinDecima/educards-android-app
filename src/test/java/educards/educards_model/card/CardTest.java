@@ -1,9 +1,11 @@
-package educards.educards_model;
+package educards.educards_model.card;
 
 import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import educards.educards_model.card.Card;
 
 public class CardTest {
 

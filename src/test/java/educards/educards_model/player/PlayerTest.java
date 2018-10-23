@@ -1,8 +1,10 @@
-package educards.educards_model;
+package educards.educards_model.player;
 
 import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
+
+import educards.educards_model.player.Player;
 
 public class PlayerTest {
 
