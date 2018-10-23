@@ -6,7 +6,7 @@ Trabajo práctico grupal de la materia Elementos de Ingeniería de Software.
 
 Educards es una aplicación para android basada en el juego de cartas timeline. Orientada a la comunidad educativa.
 
-Este juego se da en rondas individuales, se juega contra si mismo para obtener un puntaje, con cartas.  
+Este juego se juega contra si mismo para obtener un puntaje, con cartas.  
 Cada carta muestra un evento histórico, un invento o un descubrimiento en ambas caras pero con el año solo impreso por una de las dos.  
 Se empieza con una cantidad de cartas en la mano, 5 en caso de una dificultad normal, luego se ordenan sobre la mesa, hasta tener una decisión, luego se continua con el calculo del puntaje.
 En el calculo del puntaje, se dan 20 puntos por cada carta puesta en su posicion correcta.  
