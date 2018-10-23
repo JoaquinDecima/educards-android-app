@@ -7,9 +7,9 @@ import educards.educards_model.player.Player;
 
 public class Game {
 
-	Player player;
-	Board board;
-	Integer finalScore;
+	private Player player;
+	private Board board;
+	private Integer finalScore;
 	
 	public Game(Player player, ArrayList<Card> playerCards) {
 		this.player = player;
@@ -17,8 +17,8 @@ public class Game {
 	}
 	
 	public void finishGame() {
-		int score = this.calculateScore(board.checkPlayedCards());
-		player.saveHiScore(score);
+		finalScore = this.calculateScore(board.checkPlayedCards());
+		player.saveHiScore(finalScore);
 	}
 	
 	private int calculateScore(ArrayList<Boolean> result) {
@@ -29,5 +29,13 @@ public class Game {
 			}
 		}
 		return score;
+	}
+	
+	public void setBoard(Board board) {
+		this.board = board;
+	}
+	
+	public Integer getFinalScore() {
+		return finalScore;
 	}
 }
