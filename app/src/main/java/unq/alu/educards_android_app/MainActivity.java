@@ -15,14 +15,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        final EditText playerName = (EditText) findViewById(R.id.editTextMain);
+        final EditText playerName = findViewById(R.id.editTextMain);
 
-        Button playButton = (Button) findViewById(R.id.playButton);
+        Button playButton = findViewById(R.id.playButton);
         playButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent startIntent = new Intent(getApplicationContext(),JugarActivity.class);
-                startIntent.putExtra("unq.alu.educards_android_app.EXTRA", playerName.getText() );
+                startIntent.putExtra("unq.alu.educards_android_app.EXTRA", playerName.getText().toString() );
                 startActivity(startIntent);
             }
         });
