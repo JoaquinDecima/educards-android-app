@@ -131,7 +131,10 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
+                android:background="@drawable/text_frame"
+                android:gravity="center"
                 android:text="@string/playerName"
+                android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.17"
@@ -153,8 +156,10 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1"
+        app:layout_constraintVertical_bias="1.0">
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -174,6 +179,98 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/margentop"
+                android:layout_width="343dp"
+                android:layout_height="82dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.555"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageViewTablero">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/margentop">
+
+                <ImageView
+                    android:id="@+id/slot1"
+                    android:layout_width="70dp"
+                    android:layout_height="105dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/espacio_carta"
+                    android:contentDescription="@string/slot1" />
+
+                <ImageView
+                    android:id="@+id/slot2"
+                    android:layout_width="70dp"
+                    android:layout_height="105dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/espacio_carta"
+                    android:contentDescription="@string/slot2" />
+
+                <ImageView
+                    android:id="@+id/slot3"
+                    android:layout_width="70dp"
+                    android:layout_height="105dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/espacio_carta"
+                    android:contentDescription="@string/slot3" />
+
+                <ImageView
+                    android:id="@+id/slot4"
+                    android:layout_width="70dp"
+                    android:layout_height="105dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/espacio_carta"
+                    android:contentDescription="@string/slot4" />
+
+                <ImageView
+                    android:id="@+id/slot5"
+                    android:layout_width="70dp"
+                    android:layout_height="105dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/espacio_carta"
+                    android:contentDescription="@string/slot5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/margenbot"
+                android:layout_width="341dp"
+                android:layout_height="94dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewTablero"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"></LinearLayout>
+
 
         </android.support.constraint.ConstraintLayout>
     </LinearLayout>
