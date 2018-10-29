@@ -2,13 +2,14 @@ package educards.educards_model.game;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 
 import educards.educards_model.card.Card;
 
 public class Board {
 	
 	private ArrayList<Card> cardsToPlay;
-	private ArrayList<Card> playedCards = new ArrayList<Card>();
+	private HashMap<Integer,Card> playedCards = new HashMap<Integer,Card>();
 	private ArrayList<Card> correctOrder;
 
 	public Board(ArrayList<Card> cards) {
@@ -16,11 +17,15 @@ public class Board {
 		this.generateCorrectOrder();
 	}
 	
-	public void playCard(Card card) {
-		playedCards.add(card);
+	public void playCard(Integer position, Card card) {
+		if(playedCards.containsKey(position)) {
+			cardsToPlay.add(playedCards.get(position));
+		}
+		playedCards.put(position, card);
+		cardsToPlay.remove(card);
 	}
 	
-	public ArrayList<Card> getPlayedCards(){
+	public HashMap<Integer,Card> getPlayedCards(){
 		return playedCards;
 	}
 	
@@ -35,9 +40,8 @@ public class Board {
 	
 	public ArrayList<Boolean> checkPlayedCards(){
 		ArrayList<Boolean> results = new ArrayList<Boolean>();
-		for(int i=0; i< playedCards.size(); i++) {
-			Boolean result = playedCards.get(i) == correctOrder.get(i);
-			results.add(result);
+		for(int i=1; i<6; i++) {
+			results.add(correctOrder.get(i-1).equals(playedCards.get(i)));
 		}
 		return results;
 	}
