@@ -25,4 +25,4 @@ after_success:
 script:
   - ./gradlew check
   - ./gradlew build check
-- ./gradlew test
+  - ./gradlew test
