@@ -36,7 +36,12 @@ La app contará con un sistema de puntuación y ranking entre los diferentes jug
 |  Agregar Travis y Codecov | Liza + Jimena | 7 | 9hs | 2 | En proceso |
 |  Review de VSM | Liza | 3 |  | 2 | En proceso |
 
-##Links
+## Sprints
+ - [Sprint 0](./sprint-0/README.md)
+ - [Sprint 1](./sprint-1/README.md)
+ - [Sprint 2](./sprint-2/README.md)
+
+## Links
 
 - VSM : https://realtimeboard.com/app/board/o9J_kymi1Ps=/
 
