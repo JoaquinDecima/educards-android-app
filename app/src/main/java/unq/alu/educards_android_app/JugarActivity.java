@@ -1,6 +1,8 @@
 package unq.alu.educards_android_app;
 
 import android.content.ClipData;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.DragEvent;
@@ -8,11 +10,12 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class JugarActivity extends AppCompatActivity {
 
+public class JugarActivity extends AppCompatActivity {
 
     ImageView image1, image2, image3, image4, image5;
     ImageView target1, target2, target3, target4, target5;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
