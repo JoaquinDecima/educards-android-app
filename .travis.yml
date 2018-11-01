@@ -27,3 +27,4 @@ script:
   - ./gradlew build check
   - ./gradlew build jacocoTestReport
   - ./gradlew test
+
