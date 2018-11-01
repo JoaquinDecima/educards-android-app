@@ -1,7 +1,8 @@
-package educards.educards_model.game;
-
+package educards.educards_model.test;
 import static org.junit.Assert.*;
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+
 import java.util.ArrayList;
 import org.junit.Before;
 import org.junit.Test;
@@ -9,8 +10,7 @@ import educards.educards_model.card.Card;
 import educards.educards_model.game.Board;
 
 public class BoardTest {
-
-	Board board;
+ 	Board board;
 	Card mockCard;
 	Card mockCard2;
 	Card mockCard3;
@@ -42,20 +42,7 @@ public class BoardTest {
 	
 	@Test
 	public void playACard() {
-		board.playCard(mockCard);
+		board.playCard(0, mockCard);
 		assertEquals(1, board.getPlayedCards().size());
-	}
-
-	@Test
-	public void checkAssertsInPlayedCards() {
-		board.playCard(mockCard2);
-		board.playCard(mockCard);
-		board.playCard(mockCard3);
-		
-		ArrayList<Boolean> asserts = board.checkPlayedCards();
-		
-		assertFalse(asserts.get(0));
-		assertTrue(asserts.get(1));
-		assertFalse(asserts.get(2));
 	}
 }

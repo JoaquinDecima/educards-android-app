@@ -1,20 +1,16 @@
-package educards.educards_model.player;
-
+package educards.educards_model.test;
 import static org.junit.Assert.*;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 import org.junit.Before;
 import org.junit.Test;
-
 import educards.educards_model.player.Player;
 import educards.educards_model.player.PlayerAdministrator;
-
-import static org.mockito.Mockito.*;
-
 import java.util.ArrayList;
 
 public class PlayerAdministratorTest {
-
-	PlayerAdministrator playerAdministrator;
+ 	PlayerAdministrator playerAdministrator;
 	Player mockPlayer;
 	Player mockPlayer2;
 	Player mockPlayer3;
@@ -49,4 +45,4 @@ public class PlayerAdministratorTest {
 		assertEquals(mockPlayer2, ranking.get(2));
 	}
 	
-}
+} 

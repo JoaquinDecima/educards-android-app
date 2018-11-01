@@ -1,17 +1,14 @@
-package educards.educards_model.card;
-
+package educards.educards_model.test;
 import static org.junit.Assert.*;
+import static org.mockito.Mockito.mock;
 
 import org.junit.Before;
 import org.junit.Test;
-
 import educards.educards_model.card.Card;
 import educards.educards_model.card.CardAdministrator;
 
-import static org.mockito.Mockito.*;
-
 public class CardAdministratorTest {
-
+ 	
 	CardAdministrator cardAdministrator;
 	Card mockCard;
 	Card mockCard2;

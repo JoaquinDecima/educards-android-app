@@ -1,14 +1,11 @@
-package educards.educards_model.player;
-
+package educards.educards_model.test;
 import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
-
 import educards.educards_model.player.Player;
 
 public class PlayerTest {
-
-	Player player;
+ 	Player player;
 	
 	@Before
 	public void setUp() {
@@ -19,8 +16,7 @@ public class PlayerTest {
 	public void testGetId() {
 		assertTrue(1 == player.getId());
 	}
-
-	@Test 
+ 	@Test 
 	public void testGetUsername() {
 		assertTrue("pepe" == player.getUsername());
 	}
