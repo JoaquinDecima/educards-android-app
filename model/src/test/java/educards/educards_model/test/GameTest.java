@@ -1,8 +1,15 @@
 package educards.educards_model.test;
 import static org.junit.Assert.*;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
 import java.util.ArrayList;
 import org.junit.Before;
 import org.junit.Test;
+
+import educards.educards_model.game.Board;
+import educards.educards_model.game.Game;
 import educards.educards_model.player.Player;
 import educards.educards_model.card.Card;
  

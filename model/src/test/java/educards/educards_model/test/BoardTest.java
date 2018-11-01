@@ -1,5 +1,8 @@
 package educards.educards_model.test;
 import static org.junit.Assert.*;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+
 import java.util.ArrayList;
 import org.junit.Before;
 import org.junit.Test;
@@ -39,14 +42,14 @@ public class BoardTest {
 	
 	@Test
 	public void playACard() {
-		board.playCard(mockCard);
+		board.playCard(0, mockCard);
 		assertEquals(1, board.getPlayedCards().size());
 	}
  	@Test
 	public void checkAssertsInPlayedCards() {
-		board.playCard(mockCard2);
-		board.playCard(mockCard);
-		board.playCard(mockCard3);
+		board.playCard(0, mockCard2);
+		board.playCard(1, mockCard);
+		board.playCard(2, mockCard3);
 		
 		ArrayList<Boolean> asserts = board.checkPlayedCards();
 		
