@@ -45,16 +45,4 @@ public class BoardTest {
 		board.playCard(0, mockCard);
 		assertEquals(1, board.getPlayedCards().size());
 	}
- 	@Test
-	public void checkAssertsInPlayedCards() {
-		board.playCard(0, mockCard2);
-		board.playCard(1, mockCard);
-		board.playCard(2, mockCard3);
-		
-		ArrayList<Boolean> asserts = board.checkPlayedCards();
-		
-		assertFalse(asserts.get(0));
-		assertTrue(asserts.get(1));
-		assertFalse(asserts.get(2));
-	}
 }

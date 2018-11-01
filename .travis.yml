@@ -25,4 +25,5 @@ after_success:
 script:
   - ./gradlew check
   - ./gradlew build check
+  - ./gradlew build jacocoTestReport
   - ./gradlew test
