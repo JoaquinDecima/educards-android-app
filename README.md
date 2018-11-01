@@ -16,7 +16,7 @@ En el calculo del puntaje, se dan 20 puntos por cada carta puesta en su posicion
 Luego de esto se finaliza la partida y se procede a ponerlo en el ranking o no.  
 La app contará con un sistema de puntuación y ranking entre los diferentes jugadores.
 
-- VSM : https://realtimeboard.com/app/board/o9J_kymi1Ps=/
+- VSM : https://www.draw.io/?client=1#G1t04PWrZ0cz2JD5hdQrBP90ok-5RzXVBL
 
 - Sprints y Retrospectivas: https://docs.google.com/document/d/143kbgxZSo0JC5HBE386LEu2sOOBahkfcE5V7cBRzKhY/edit?usp=sharing
 
