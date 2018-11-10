@@ -1,4 +1,4 @@
-package educards.educards_model.test;
+package educards.educards_test.game;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;

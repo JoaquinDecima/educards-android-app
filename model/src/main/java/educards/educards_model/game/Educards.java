@@ -1,4 +1,4 @@
-package educards.educards_model.system;
+package educards.educards_model.game;
 
 import java.util.ArrayList;
 
@@ -11,6 +11,8 @@ public class Educards {
 
 	PlayerAdministrator playerAdministrator = new PlayerAdministrator();
 	CardAdministrator cardAdministrator = new CardAdministrator();
+	
+	public Educards() {}
 	
 	public ArrayList<Player> getRanking(){
 		return playerAdministrator.getRanking();
