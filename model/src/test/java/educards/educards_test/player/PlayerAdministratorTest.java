@@ -44,4 +44,11 @@ public class PlayerAdministratorTest {
 		assertEquals(mockPlayer2, ranking.get(2));
 	}
 	
+	@Test
+	public void getPlayerTest() {
+		playerAdministrator.addPlayer(mockPlayer);
+		Player myPlayer = playerAdministrator.getPlayer("Pepe");
+		assertEquals(myPlayer,mockPlayer);
+	}
+	
 } 

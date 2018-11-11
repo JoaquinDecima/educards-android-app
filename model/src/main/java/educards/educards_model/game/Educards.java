@@ -1,8 +1,5 @@
 package educards.educards_model.game;
 
-import java.util.ArrayList;
-
-import educards.educards_model.card.Card;
 import educards.educards_model.card.CardAdministrator;
 import educards.educards_model.player.Player;
 import educards.educards_model.player.PlayerAdministrator;
@@ -11,14 +8,27 @@ public class Educards {
 
 	PlayerAdministrator playerAdministrator = new PlayerAdministrator();
 	CardAdministrator cardAdministrator = new CardAdministrator();
+	Game currentGame;
+	Integer nextID = 1;
 	
 	public Educards() {}
 	
-	public ArrayList<Player> getRanking(){
-		return playerAdministrator.getRanking();
+	public void registerPlayer(String username) {
+		Player player = new Player(nextID,username);
+		playerAdministrator.addPlayer(player);
+		nextID ++;	
 	}
 	
-	public ArrayList<Card> getCards(){
-		return cardAdministrator.getCards();
+	public void startGame(String username) {
+		Player player = playerAdministrator.getPlayer(username);
+		currentGame = new Game(player, cardAdministrator.getCards());
+	}
+
+	public PlayerAdministrator getPlayerAdministrator() {
+		return playerAdministrator;
+	}
+	
+	public Game getCurrentGame() {
+		return currentGame;
 	}
 }
