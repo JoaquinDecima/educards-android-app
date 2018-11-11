@@ -44,10 +44,18 @@ public class BoardTest {
 	
 	@Test
 	public void playACardTest() {
-		board.playCard(0, mockCard);
+		board.playCard(1, mockCard);
 		assertEquals(1, board.getPlayedCards().size());
 		assertEquals(4, board.getCardsToPlay().size());
-		assertEquals(mockCard,board.getPlayedCards().get(0));
+		assertEquals(mockCard,board.getPlayedCards().get(1));
+	}
+	
+	@Test
+	public void playDuplicatedCardTest() {
+		board.playCard(1, mockCard);
+		board.playCard(1, mockCard2);
+		assertTrue(board.getCardsToPlay().contains(mockCard));
+		assertEquals(board.getPlayedCards().get(1),mockCard2);
 	}
 	
 	@Test
